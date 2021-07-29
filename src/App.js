@@ -88,7 +88,7 @@ const App = () => {
 
   return (
     <>
-      <div className='font-title'>
+      <div>
         <Header />
       </div>
 
@@ -106,9 +106,8 @@ const App = () => {
         {/* Por algun motivo se rerenderiza el componente Definitions, investigar */}
         <Definitions result={newDefinition} />
 
+        <button className='dark:text-white' onClick={changeTheme}>cambio de modo</button>
       </div>
-
-      <button onClick={changeTheme}>cambio de modo</button>
 
       {/* <Button /> */}
 
