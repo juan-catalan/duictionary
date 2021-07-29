@@ -26,10 +26,10 @@ const Feature = () => {
       <div className='bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg'>
         <div className='max-w-xl px-6 py-12 lg:max-w-5xl'>
           <h2 className='text-2xl font-bold text-gray-800 dark:text-white md:text-3xl'>A modern UI for a <span className='text-indigo-600 dark:text-indigo-400'>Dictionary</span></h2>
-          <p className='mt-4 text-gray-600 dark:text-gray-400'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
+          <p className='mt-4 text-gray-600 dark:text-gray-400'>Using the owlbot API y blabla, lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam.</p>
 
           <div className='mt-8'>
-            <a href=' ' className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700'>Start Now</a>
+            <a href='https://owlbot.info/' target='_blank' className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-indigo-500 rounded-md lg:hover:bg-indigo-400' rel='noreferrer'>The owlbot API</a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ const App = () => {
       <div className='mb-auto flex flex-col items-center text-left w-full bg-gray-100 dark:bg-gray-900' id='Content'>
         <form onSubmit={handleSubmit} className='mt-14 mb-8'>
           <input value={newPetition} onChange={handleChange} className='shadow appearance-none border dark:border-transparent rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none dark:bg-gray-800 dark:text-white focus:shadow-outline"' />
-          <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 dark:border-transparent rounded shadow dark:bg-indigo-500 dark:text-white'>check!</button>
+          <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 dark:border-transparent rounded shadow dark:bg-indigo-500 dark:text-white lg:dark:hover:bg-indigo-400'>check!</button>
         </form>
 
         <p className='flex flex-col items-center text-center font-body mx-8 text-3xl dark:text-white'>
