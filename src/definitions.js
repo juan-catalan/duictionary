@@ -8,31 +8,6 @@ const Img = (props) => {
   }
 }
 
-// const Card = (props) => {
-//   return (
-//     <div className='mt-10 mb-14 rounded-t-lg rounded-b-lg overflow-hidden border-t border-l border-r border-b border-gray-400 p-10  flex justify-center'>
-//       <div className='max-w-sm rounded overflow-hidden shadow-lg'>
-//         {/* Si no hay fotos quitarlo */}
-//         <Img img={props.information.image_url} alt={props.information.definition} />
-//         {/* <img className='w-full' src={props.information.image_url} alt={props.information.definition} /> */}
-//         <div className='px-6 py-4'>
-//           <i className='font-body text-xl mb-2'>{props.information.type}</i>
-//           <br />
-//           <p className='font-body mt-4 text-base'>
-//             {props.information.definition}
-//           </p>
-//           <p className='font-body mt-4 text-base'>
-//             <i>
-//               {props.information.example}
-//             </i>
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-
-//   )
-// }
-
 const grid = (length) => {
   if (length >= 3) {
     return 'lg:grid grid-cols-3 gap-4'
@@ -45,7 +20,8 @@ const Card = (props) => {
   const cards = props.definitions.map((element) => {
     return (
       <div key={element.definition} className='mr-8 mt-10 mb-14 bg-white rounded-t-lg rounded-b-lg overflow-hidden border-t border-l border-r border-b border-gray-400 dark:border-transparent p-10 flex justify-center dark:bg-gray-800'>
-        <div className='max-w-sm rounded overflow-hidden shadow-lg dark:rounded dark:bg-gray-700 dark:text-white'>
+        {/* QUIZA QUITAR EL BORDE A LAS TARJETAS */}
+        <div className='max-w-sm rounded overflow-hidden border border-gray-200 shadow-lg dark:border-transparent dark:rounded dark:bg-gray-700 dark:text-white'>
           <Img img={element.image_url} alt={element.definition} />
           <div className='px-6 py-4'>
             <i className='font-body text-xl mb-2'>{element.type}</i>
