@@ -2,7 +2,7 @@
   "name": "duictionary",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://juanitolpelucas.github.io/duictionary",
+  "homepage": "https://juanitolpelucas.github.io/duictionary",
   "dependencies": {
     "@craco/craco": "6.2.0",
     "@testing-library/jest-dom": "5.14.1",
