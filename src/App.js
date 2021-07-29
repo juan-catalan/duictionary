@@ -51,6 +51,7 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    document.activeElement.blur()
     if (newPetition !== '') {
       client.define(newPetition)
         .then(function (result) {
