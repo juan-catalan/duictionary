@@ -1,12 +1,12 @@
 function Footer () {
   return (
     <footer className='flex flex-col items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 sm:flex-row'>
-      <a href='#' className='text-3xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300'>dUIctionary</a>
+      <a href=' ' className='text-3xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300'>dUIctionary</a>
 
-      <p className='py-2 text-gray-800 dark:text-white sm:py-0 italic'>@juanitolpelucas</p>
+      <span className='py-2 text-gray-800 dark:text-gray-400 sm:py-0'>@juanitolpelucas</span>
 
       <div className='flex -mx-2'>
-        <a href='#' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300' aria-label='Reddit'>
+        <a href=' ' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300' aria-label='Reddit'>
           <svg
             className='w-5 h-5 fill-current' viewBox='0 0 24 24' fill='none'
             xmlns='http://www.w3.org/2000/svg'
@@ -18,7 +18,7 @@ function Footer () {
         </a>
 
         <a
-          href='#' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300'
+          href=' ' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300'
           aria-label='Facebook'
         >
           <svg
@@ -31,7 +31,7 @@ function Footer () {
           </svg>
         </a>
 
-        <a href='#' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300' aria-label='Github'>
+        <a href=' ' className='mx-2 text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300' aria-label='Github'>
           <svg
             className='w-5 h-5 fill-current' viewBox='0 0 24 24' fill='none'
             xmlns='http://www.w3.org/2000/svg'

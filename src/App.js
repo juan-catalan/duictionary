@@ -29,7 +29,7 @@ const Feature = () => {
           <p className='mt-4 text-gray-600 dark:text-gray-400'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
 
           <div className='mt-8'>
-            <a href='#' className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700'>Start Now</a>
+            <a href=' ' className='px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700'>Start Now</a>
           </div>
         </div>
       </div>
@@ -75,26 +75,15 @@ const App = () => {
     setnewPetition(event.target.value)
   }
 
-  const changeTheme = () => {
-    const htmlClasses = document.querySelector('html').classList
-    if (localStorage.theme === 'dark') {
-      htmlClasses.remove('dark')
-      localStorage.removeItem('theme')
-    } else {
-      htmlClasses.add('dark')
-      localStorage.theme = 'dark'
-    }
-  }
-
   return (
-    <>
+    <div className='flex flex-col h-screen justify-between bg-gray-100 dark:bg-gray-900'>
       <div>
         <Header />
       </div>
 
       <Feature />
 
-      <div className='flex flex-col items-center text-left w-full bg-gray-100 dark:bg-gray-900' id='Content'>
+      <div className='mb-auto flex flex-col items-center text-left w-full bg-gray-100 dark:bg-gray-900' id='Content'>
         <form onSubmit={handleSubmit} className='mt-14 mb-8'>
           <input value={newPetition} onChange={handleChange} className='shadow appearance-none border dark:border-transparent rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none dark:bg-gray-800 dark:text-white focus:shadow-outline"' />
           <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 dark:border-transparent rounded shadow dark:bg-indigo-500 dark:text-white'>check!</button>
@@ -106,7 +95,6 @@ const App = () => {
         {/* Por algun motivo se rerenderiza el componente Definitions, investigar */}
         <Definitions result={newDefinition} />
 
-        <button className='dark:text-white' onClick={changeTheme}>cambio de modo</button>
       </div>
 
       {/* <Button /> */}
@@ -114,7 +102,7 @@ const App = () => {
       <div id='Footer'>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
