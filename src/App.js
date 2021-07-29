@@ -62,7 +62,7 @@ const App = () => {
           setnewError(
             <>
               <b>no definition for {newPetition} :(</b>
-              <img className='w-32 h-32 rounded-full' src='https://pbs.twimg.com/media/ETNUs_XWoAA1JBv.jpg' alt='sad cat' />
+              <img className='w-32 h-32 rounded-full my-8' src='https://pbs.twimg.com/media/ETNUs_XWoAA1JBv.jpg' alt='sad cat' />
             </>
           )
         })
@@ -99,7 +99,7 @@ const App = () => {
           <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 dark:border-transparent rounded shadow dark:bg-indigo-500 dark:text-white'>check!</button>
         </form>
 
-        <p className='font-body ml-8 text-3xl'>
+        <p className='flex flex-col items-center text-center font-body mx-8 text-3xl dark:text-white'>
           {newError}
         </p>
         {/* Por algun motivo se rerenderiza el componente Definitions, investigar */}
