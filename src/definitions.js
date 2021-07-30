@@ -20,7 +20,6 @@ const Card = (props) => {
   const cards = props.definitions.map((element) => {
     return (
       <div key={element.definition} className='mr-8 mt-10 mb-14 bg-white rounded-t-lg rounded-b-lg overflow-hidden border-t border-l border-r border-b border-gray-400 dark:border-transparent p-10 flex justify-center dark:bg-gray-800'>
-        {/* QUIZA QUITAR EL BORDE A LAS TARJETAS */}
         <div className='max-w-sm rounded overflow-hidden border border-gray-200 shadow-lg dark:border-transparent dark:rounded dark:bg-gray-700 dark:text-white'>
           <Img img={element.image_url} alt={element.definition} />
           <div className='px-6 py-4'>
