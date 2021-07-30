@@ -41,7 +41,8 @@ function Header () {
       <div className='container px-6 py-4 mx-auto md:flex md:justify-between md:items-center'>
         <div className='flex items-center justify-between'>
           <div>
-            <a href=' ' className='text-3xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 '>dUIctionary</a>
+            {/* text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 */}
+            <a href=' ' className='text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-900 to-indigo-600 dark:from-indigo-400 dark:to-indigo-100'>dUIctionary</a>
           </div>
 
           {/* <!-- Mobile menu button --> */}

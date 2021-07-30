@@ -1,7 +1,7 @@
 function Footer () {
   return (
     <footer className='flex flex-col items-center justify-between px-6 py-4 bg-white dark:bg-gray-800 sm:flex-row'>
-      <a href=' ' className='text-3xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300'>dUIctionary</a>
+      <a href=' ' className='text-3xl font-bold text-gray-700 dark:text-white hover:text-gray-600 dark:hover:text-gray-300'>dUIctionary</a>
 
       <span className='py-2 text-gray-800 dark:text-gray-400 sm:py-0'>@juanitolpelucas</span>
 
