@@ -97,8 +97,6 @@ const App = () => {
 
       </div>
 
-      {/* <Button /> */}
-
       <div id='Footer'>
         <Footer />
       </div>
